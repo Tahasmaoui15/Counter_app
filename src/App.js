@@ -16,7 +16,7 @@ export default class App extends Component {
     return (
       <div>
         <button onClick={()=> this.toggle()}>Show/Hide</button>
-        <Counter/>
+        {this.state.show?<Counter/>:null}
       </div>
     );
   }
