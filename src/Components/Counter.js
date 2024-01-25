@@ -11,7 +11,9 @@ export default class Counter extends Component {
       } 
 
       decrement = () => {
+        if (this.state.count > 0) {
         this.setState({count: this.state.count -1})
+    }
       }
 
   render() {
