@@ -15,7 +15,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <button onClick={()=> this.toggle()}>Show/Hide</button>
+        <button onClick={()=> this.toggle()} style={{margin:'5% 50%'}}>Show/Hide</button>
         {this.state.show?<Counter/>:null}
       </div>
     );
