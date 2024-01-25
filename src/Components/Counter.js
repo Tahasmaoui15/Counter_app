@@ -16,8 +16,9 @@ export default class Counter extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{display:'flex', justifyContent:'center', gap:'3rem', margin:'9rem'}}>
         <button onClick={() => this.increment()}> + </button>
+        <h3> {this.state.count} </h3>
         <button onClick={() =>  this.decrement()}> - </button> 
       </div>
     );
