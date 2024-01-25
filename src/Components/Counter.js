@@ -14,7 +14,11 @@ export default class Counter extends Component {
         if (this.state.count > 0) {
         this.setState({count: this.state.count -1})
     }
+    else {
+        alert ("The counter cannot go below zero.")
+    }
       }
+      
 
   render() {
     return (
@@ -26,3 +30,4 @@ export default class Counter extends Component {
     );
   }
 }
+
